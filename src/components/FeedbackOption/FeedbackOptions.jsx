@@ -1,8 +1,9 @@
+import { List } from './FeedbackOptions.styled';
 import PropTypes from 'prop-types';
 
 function FeedbackOptions({ options, onFeedback}) {
     return (
-        <ul>
+        <List>
             {options.map(item => {
                 return (
                     <button key={item} type="button" onClick={() => onFeedback(item)}>
@@ -10,7 +11,7 @@ function FeedbackOptions({ options, onFeedback}) {
                     </button>
                 );
             })}
-        </ul>
+        </List>
     )
 }
 
