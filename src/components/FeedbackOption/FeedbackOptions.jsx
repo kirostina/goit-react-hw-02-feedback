@@ -1,4 +1,3 @@
-
 import PropTypes from 'prop-types';
 
 function FeedbackOptions({ options, onFeedback}) {
@@ -6,9 +5,9 @@ function FeedbackOptions({ options, onFeedback}) {
         <ul>
             {options.map(item => {
                 return (
-                    <li key={item} type="button" onClick={() => onFeedback(item)}>
+                    <button key={item} type="button" onClick={() => onFeedback(item)}>
                         {item}
-                    </li>
+                    </button>
                 );
             })}
         </ul>
